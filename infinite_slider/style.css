@@ -24,13 +24,19 @@
     width: 100%;
     flex-grow: 0;
     height: 100%;
+    align-items: center;
 }
 
 .slide1 {
-    background-color: red;
+
 }
 
 .slide2 {
-    background-color: yellow;
+
+}
+
+.alpha {
+    width: 100%;
+    text-align: center;
 }
 
