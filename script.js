@@ -41,3 +41,33 @@ slides.forEach((slide) => {
 
 let counter = 5;
 
+
+
+
+
+const slides2 = document.querySelectorAll(".slide2");
+const slider2 = document.querySelector(".slider2");
+const sliderWrapper = document.querySelector(".slide-wrapper");
+const slideContainer = document.querySelector(".slide-Container");
+
+slides2.forEach((slide, index) => {
+    slide.style.transform = `translateX(${index*100}%)`
+})
+
+const slider = document.querySelector(".slider2");
+function clone() {
+    const slideWrapper = document.querySelector(".slider2")
+    const clonedNode = slider.cloneNode(true);
+    slideWrapper.appendChild(clonedNode);
+    const width = slider2.offsetWidth;
+    console.log(width);
+    clonedNode.style = `left: ${width}px`
+}
+
+function moveLeft() {
+    const width = slider2.offsetWidth;
+    console.log(width);
+}
+clone();
+moveLeft();
+

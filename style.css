@@ -22,3 +22,31 @@
     color: white;
     
 }
+
+.slide-wrapper {
+    position:relative;
+    margin: 0 auto;
+    width: 300px;
+    
+
+}
+
+.slider2 {
+    position: absolute;
+    display: flex;
+    height: 50px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.slide-container {
+
+}
+
+.slide2 {
+    position: absolute;
+    max-width: 90px;
+    width: 100%;
+    border: 1px solid red;
+
+}
