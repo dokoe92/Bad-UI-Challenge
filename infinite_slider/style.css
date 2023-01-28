@@ -6,17 +6,16 @@
 .container {
     position: relative;
     border: 5px solid black;
-    width: 100px;
+    width: 500px;
     height: 50px;
     margin: 20vw auto;  
-    overflow:hidden;
-
+    overflow: hidden;
 }
 
 .slider-container {
     position: absolute;
     display: flex;
-    width: 300px;
+    width: 1000px;
     height: 100%;
 }
 
