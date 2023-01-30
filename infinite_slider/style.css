@@ -6,7 +6,7 @@
 .container {
     position: relative;
     border: 5px solid black;
-    width: 500px;
+    width: 400px;
     height: 50px;
     margin: 10rem auto;  
     margin-bottom: 2rem;
@@ -16,7 +16,7 @@
 .slider-container {
     position: absolute;
     display: flex;
-    width: 1000px;
+    width: 3000px;
     height: 100%;
 }
 

@@ -22,7 +22,8 @@ function clone() {
 function moveBox() {
     sliderContainer.style.left = `${left}px`;
     left--;
-    if (sliderContainer.style.left === "-500px") {
+    let startClone = container.scrollWidth;
+    if (sliderContainer.style.left === `-${startClone}px`) {
         left = 0;
         clone();
     }
@@ -57,5 +58,5 @@ reset.addEventListener("click", deleteInput)
 
 
 
-setInterval(moveBox, 20); // start moving the letters
+setInterval(moveBox, 10); // start moving the letters
 
