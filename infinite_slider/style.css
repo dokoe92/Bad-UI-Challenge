@@ -8,7 +8,8 @@
     border: 5px solid black;
     width: 400px;
     height: 50px;
-    margin: 10rem auto;  
+    margin: 5rem auto;  
+    margin-top: 0rem;
     margin-bottom: 2rem;
     overflow: hidden;
 }
@@ -28,13 +29,6 @@
     align-items: center;
 }
 
-.slide1 {
-
-}
-
-.slide2 {
-
-}
 
 .alpha {
     width: 100%;
@@ -57,22 +51,127 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
+.input-wrapper > h1 {
+    color: red;
+    font-size: 3rem;
+}
+
+
 .input {
+    width: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.input-name {
+.input-name, .input-password, .confirm-password {
     pointer-events: none;
     width: 100%;
 }
 
-.reset-btn {
+.input-name:focus, .input-password:focus, .confirm-password:focus {
+    background-color: yellow;
+}
+
+.letter-change-btns {
+    width: 10rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.moving-container-header {
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ---Password confirmation modal--- */
+.modal {
+    width: 30%;
+    height: 50%;
+    z-index: 10;
+    background-color: gray;
+    position: fixed;
+    margin: 0 auto;
+    display : none;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 5px;
+}
+
+.close {
+    float: right;
+    font-size: 2rem;
+}
+
+.modal-content-confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.number-block {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(3, 1fr);
+    width: 10rem;
+    background-color: black;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.number:active {
+    background-color: gray;
+}
+
+.sign-box {
     margin: 0 auto;
     width: 10rem;
-    display: block;
+    display: flex;
+
+}
+
+.wrapper {
+    border: 1px solid black;
+    width: 50vw;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.sign-box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.sign {
+    padding: 1rem;
+    background-color: lightgray;
+    color: white;
+}
+
+.sign:hover {
+    font-size: 5rem;
+}
+
+.select-btns {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

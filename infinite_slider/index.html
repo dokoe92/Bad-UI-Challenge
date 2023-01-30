@@ -4,31 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <title>Tears</title> 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="input-wrapper">
-        <h1>Tears.com</h1>
-        <p>Please register</p>
-        <div class="input">
-            <label for="input-name">Please enter name</label>
-            <input type="text" id="input-name" class="input-name" maxlength="100">
-            <label for="input-password">Please enter password</label>
-            <input type="text" id="input-password" class="input-password">
-            <input type="button" name="" id="" value="submit" class="input-btn">
+    <div class="wrapper">
+        <div class="input-wrapper">
+            <h1>Tears.com</h1>
+            <h2>Please register</h2>
+            <div class="input">
+                <label for="input-name">Please enter email</label>
+                <input type="text" id="input-name" class="input-name" maxlength="100" readonly>
+                <label for="input-password">Please enter password</label>
+                <input type="password" id="input-password" class="input-password" readonly>
+                <label for="confirm-password">Please confirm password</label>
+                <input type="password" id="confirm-password" class="confirm-password" readonly>
+                <input type="button" name="" id="" value="submit" class="submit-btn">
+            </div>
+        </div>
+        <div class="select-btns">
+            <button class="email-btn">email</button>
+            <button class="password-btn">password</button>
+            <button class="confirmPass-btn">confirm password</button>
+        </div>
+        <!--Modal box for submit-->
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-content-confirmation">
+                    <h2>Confirmation</h2>
+                    <p class="emailConfirm"></p>
+                    <p class="passwordConfirm"></p>
+                    <p class="passwordConfirmationConfirm"></p>
+                    <p class="passwordSuccess"></p>
+                </div>
+        
+            </div>
+        </div>
+        
+        <h3 class="moving-container-header">Use this for input</h3>
+        <div class="container">
+            <div class="slider-container">
+                <div class="slide1 slide"></div>
+                <div class="slide2 slide"></div>
+            </div>
+        </div>
+        <div class="letter-change-btns">
+            <button class="reset-btn">Reset</button>
+            <button class="upper-btn">upper case</button>
+            <button class="lower-btn">lower case</button>
+        </div>
+    
+        <div class="number-block">
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="number">7</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+        </div>
+    
+        <div class="sign-box">
+            <div class="sign">!</div>
+            <div class="sign">"</div>
+            <div class="sign">§</div>
+            <div class="sign">%</div>
+            <div class="sign">&</div>
+            <div class="sign">/</div>
+            <div class="sign">(</div>
+            <div class="sign">)</div>
+            <div class="sign">=</div>
+            <div class="sign">?</div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="slider-container">
-            <div class="slide1 slide"></div>
-            <div class="slide2 slide"></div>
-        </div>
-    </div>
-    <button class="reset-btn">Reset</button>
- 
+
+
     
 </body>
 </html>
