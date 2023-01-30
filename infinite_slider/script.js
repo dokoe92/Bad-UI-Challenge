@@ -29,6 +29,23 @@ function moveBox() {
     }
 }
 
+//---ADD ALPHABET---
+function addAlpha(slide) {
+    const alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    alpha.forEach(alpha => {
+        let ele = document.createElement("div");
+        let letter = document.createTextNode(alpha);
+        ele.appendChild(letter);
+        ele.classList.add("alpha");
+        slide.appendChild(ele);
+    })
+}
+
+addAlpha(slide1);
+addAlpha(slide2);
+
+
+
 // ---FUNCTIONS FOR INPUT---
 const alpha = document.querySelectorAll(".alpha");
 
@@ -54,9 +71,8 @@ function deleteInput() {
 }
 reset.addEventListener("click", deleteInput)
 
-
-
-
-
 setInterval(moveBox, 10); // start moving the letters
+
+
+
 
