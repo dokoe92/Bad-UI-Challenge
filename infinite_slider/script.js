@@ -104,8 +104,15 @@ function getAlpha(e) {
 // Reset name input field
 const reset = document.querySelector(".reset-btn")
 function deleteInput() {
-    console.log("test")
-    inputText.value = "";
+    if (emailBool) {
+        inputText.value = "";
+    } 
+    if (passwordBool) {
+        inputPassword.value = "";
+    }
+    if (confirmPassBool) {
+        confirmPassword.value = "";
+    }
 }
 reset.addEventListener("click", deleteInput)
 
@@ -134,7 +141,7 @@ lower.addEventListener("click", toLower)
 
 
 
-// Submit
+// Submit and modal opening / closing
 const submit = document.querySelector(".submit-btn");
 const email = document.querySelector(".input-name");
 const password = document.querySelector(".input-password");
@@ -198,6 +205,7 @@ numbers.forEach(number => {
     })
 })
 
+// Select signs
 const signs = document.querySelectorAll(".sign");
 signs.forEach(sign => {
     sign.addEventListener("click", () => {

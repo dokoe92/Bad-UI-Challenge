@@ -2,6 +2,34 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(black, white);
+}
+
+button {
+    border-radius: 5px;
+    border-style: none;
+    margin: 3px;
+}
+
+button:active {
+    background-color: whitesmoke;
+}
+
+input[type=button] {
+    border-radius: 3px;
+    margin: 5px;
+    border-style: none;
+}
+
+.submit-btn:active {
+    background-color: whitesmoke;
+}
+
+input {
+    border-radius: 2px;
+    border-style: none;
+}
 
 .container {
     position: relative;
@@ -12,6 +40,7 @@
     margin-top: 0rem;
     margin-bottom: 2rem;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .slider-container {
@@ -47,7 +76,7 @@
 .input-wrapper {
     text-align: center;
     margin: 0 auto;
-    width: 50rem;
+    width: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,6 +92,7 @@
 .input {
     width: 10rem;
     display: flex;
+    
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -78,9 +108,10 @@
 }
 
 .letter-change-btns {
-    width: 10rem;
+    width: 25rem;
     display: flex;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 .moving-container-header {
@@ -107,32 +138,40 @@
     left: 50%;
     transform: translate(-50%,0);
     padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px;
 }
 
 .close {
     float: right;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .modal-content-confirmation {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
 }
 
 .number-block {
     display: grid;
     color: white;
+    background-color: lightgray;
     grid-template-columns: repeat(3, 1fr);
     width: 10rem;
-    background-color: black;
     margin: 0 auto;
     cursor: pointer;
+    text-align: center;
+}
+
+.number:hover {
+    color: rgba(211, 211, 211, 0.365);
 }
 
 .number:active {
-    background-color: gray;
+    background-color: white;
 }
 
 .sign-box {
@@ -143,10 +182,12 @@
 }
 
 .wrapper {
-    border: 1px solid black;
     width: 50vw;
-    height: 80vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
     margin: 0 auto;
+
 }
 
 .sign-box {
@@ -164,7 +205,8 @@
 }
 
 .sign:hover {
-    font-size: 5rem;
+    font-size: 2rem;
+    color: rgba(211, 211, 211, 0.783)
 }
 
 .select-btns {
